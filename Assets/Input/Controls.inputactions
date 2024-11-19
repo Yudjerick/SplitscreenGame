@@ -88,6 +88,54 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Online",
+            "id": "17d12a08-cd03-464a-ae0c-aacfb4cf3fa7",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "f3f9a47d-65e3-416d-905e-c11396f24180",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Move",
+                    "type": "Button",
+                    "id": "bb2d8933-02f8-4791-b7b1-9c2d0ce60ba3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7466b9b9-4b49-47d5-ad3c-a1a8cb14d47c",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4cf2165c-a67d-47a6-a746-2427deda1cd0",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

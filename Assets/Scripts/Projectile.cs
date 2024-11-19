@@ -1,3 +1,4 @@
+using Mirror;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Projectile : MonoBehaviour
 {
-    public Player owner { get; set; }
+    [field: SerializeField] public Player owner { get; set; }
     private Rigidbody2D _rb;
     [SerializeField] private float speed;
     [SerializeField] private float lifeTime;
