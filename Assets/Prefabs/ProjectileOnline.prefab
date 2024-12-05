@@ -207,7 +207,7 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
-  <ownerNetId>k__BackingField: 0
+  ownerNetId: 0
   speed: 6
   lifeTime: 10
-  <Damage>k__BackingField: 10
+  <Damage>k__BackingField: 30

@@ -112,6 +112,7 @@ MonoBehaviour:
   winScreen: {fileID: 9119498491424565953}
   moveForce: 500
   playerCamera: {fileID: 8060038608112419849}
+  playerOffset: 2
   networkId: 0
 --- !u!114 &4486657682419225968
 MonoBehaviour:
@@ -700,7 +701,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8626963426322819616
 RectTransform:
   m_ObjectHideFlags: 0

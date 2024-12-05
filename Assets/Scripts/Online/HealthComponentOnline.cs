@@ -16,7 +16,7 @@ public class HealthComponentOnline : NetworkBehaviour
     [SerializeField] private GameObject healthBar;
     public bool Alive = true;
 
-    public UnityAction<HealthComponent> OnDie;
+    public UnityAction<HealthComponentOnline> OnDie;
     void Start()
     {
         UpdateHpVisuals();
@@ -66,9 +66,10 @@ public class HealthComponentOnline : NetworkBehaviour
 
     private void Die()
     {
+        FindAnyObjectByType<GameManagerOnline>().CmdCheckVictory();
         Alive = false;
         deathScreen?.SetActive(true);
-        //OnDie?.Invoke(this);
+        OnDie?.Invoke(this);
         gameObject.SetActive(false);
         healthBar?.SetActive(false);
 

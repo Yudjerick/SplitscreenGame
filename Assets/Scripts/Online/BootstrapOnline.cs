@@ -5,10 +5,11 @@ using UnityEngine;
 
 public class BootstrapOnline : NetworkBehaviour
 {
-    private void OnConnectedToServer()
+    private void Start()
     {
-        FindAnyObjectByType<InputSubscribing>().SubcribeToInput();
-        FindAnyObjectByType<ActionRebinder>().RebindPlayerInputKeys();
-        FindAnyObjectByType<VictoryManager>().RegisterPlayersHp();
+        print("Bootstrap");
+        //FindAnyObjectByType<InputSubscribing>().SubcribeToInput();
+        //FindAnyObjectByType<ActionRebinder>().RebindPlayerInputKeys();
+        
     }
 }

@@ -1,3 +1,4 @@
+using Mirror;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,7 @@ public class ToMenuButton : MonoBehaviour
         {
             Destroy(gameSceneStarter);
         }
+        FindAnyObjectByType<NetworkManager>().StopClient();
         SceneManager.LoadScene("Menu");
     }
 }
